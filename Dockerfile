@@ -1,5 +1,5 @@
 # Stage 1: Build Spring Boot application
-FROM eclipse-temurin:21-jdk AS builder
+FROM docker.io/library/eclipse-temurin:21-jdk AS builder
 
 WORKDIR /app
 
@@ -9,7 +9,7 @@ RUN chmod +x gradlew && \
     ./gradlew clean bootJar --no-daemon
 
 # Stage 2: Runtime image
-FROM eclipse-temurin:21-jre
+FROM docker.io/library/eclipse-temurin:21-jre
 
 WORKDIR /app
 
