@@ -15,7 +15,7 @@ public class DemoController {
     public Map<String, String> hello() {
         return Map.of(
                 "application", "Hackathon Demo App",
-                "message", "Hello! Application is running successfully.",
+                "message", "Hello! Application is running successfully.v1",
                 "version", "1.0.0"
         );
     }
