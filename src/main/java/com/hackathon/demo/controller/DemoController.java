@@ -17,6 +17,6 @@ public class DemoController {
                 "application", "Hackathon Demo App",
                 "message", "Hello! Application is running successfully.v1",
                 "version", "1.0.0"
-        );
+        )
     }
 }
