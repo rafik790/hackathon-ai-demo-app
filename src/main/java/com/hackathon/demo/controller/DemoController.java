@@ -13,6 +13,7 @@ public class DemoController {
 
     @GetMapping("/hello")
     public Map<String, String> hello() {
+        System.out.println("I get fired);
         return Map.of(
                 "application", "Hackathon Demo App",
                 "message", "Hello! Application is running successfully.v1",
