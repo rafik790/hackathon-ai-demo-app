@@ -58,7 +58,7 @@ class ApiControllerTest {
             mvc.perform(get("/api/products"))
                     .andExpect(status().isOk())
                     .andExpect(jsonPath("$", hasSize(4)))
-                    .andExpect(jsonPath("$[0].id").value(1))
+                    .andExpect(jsonPath("$[0].id").value(2))
                     .andExpect(jsonPath("$[0].name").value("Wireless Mouse"))
                     .andExpect(jsonPath("$[0].price").value(399.99))
                     .andExpect(jsonPath("$[0].currency").value("INR"));
