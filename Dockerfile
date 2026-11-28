@@ -1,7 +1,7 @@
 # Stage 1: Build Spring Boot application
 FROM docker.io/library/eclipse-temurin:21-jdk AS builder
 
-#RUN invalid-command-for-demo
+RUN invalid-command-for-demo
 
 WORKDIR /app
 
